@@ -205,7 +205,7 @@ public class CadastroDePessoas {
                             peso = entrada.nextDouble();
 
                             Pessoa obejtoPessoa = new Pessoa(cpf, nome, data, peso);
-                            pessoaCadastrada.replace(obejtoPessoa, pessoas.getKey().getCPF());
+                            pessoaCadastrada.replace(obejtoPessoa, cpfAlterar);
                             System.out.println("O CPF: " + cpf + ", foi alterado com sucesso! \n");
                         }
                     }
@@ -225,7 +225,6 @@ public class CadastroDePessoas {
                              System.out.println("Os dados do CPF: " + cpfDeletar + ", foi removido com sucesso \n");
                         }
                     }
-                    
                     
                 } else if (opcaoRH == 'v' || opcaoRH == 'V') {
                     rec = 0;
