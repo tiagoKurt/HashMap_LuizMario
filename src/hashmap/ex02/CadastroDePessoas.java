@@ -90,7 +90,7 @@ public class CadastroDePessoas {
                     System.out.println("Digite o seu nome: ");
                     nome = entrada.next();
 
-                    System.out.println(nome + ", digite o seu cpf:");
+                    System.out.println(nome + ", digite o seu CPF:");
                     cpf = entrada.next();
                     for (HashMap.Entry<Pessoa, String> pessoas : pessoaCadastrada.entrySet()) {
                         if (pessoas.getKey().getCPF().contains(cpf) == true) {
@@ -218,14 +218,15 @@ public class CadastroDePessoas {
                     
                     for (HashMap.Entry<Pessoa, String> pessoas : pessoaCadastrada.entrySet()) {
                         if (pessoas.getKey().getCPF().contains(cpfDeletar) == false) {
-                            System.out.println("CPF inexistente, não será possivel alterar! \n");
+                            System.out.println("CPF inexistente, não será possivel remover! \n");
                         }else{
                              pessoaCadastrada.remove(pessoas.getKey());
                              System.out.println(pessoas.getKey());
+                             System.out.println("Os dados do CPF: " + cpfDeletar + ", foi removido com sucesso \n");
                         }
                     }
                     
-                    System.out.println("Os dados do CPF: " + cpfDeletar + ", foi removido com sucesso \n");
+                    
                 } else if (opcaoRH == 'v' || opcaoRH == 'V') {
                     rec = 0;
                 }
