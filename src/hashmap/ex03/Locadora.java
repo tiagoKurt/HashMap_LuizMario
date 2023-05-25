@@ -40,7 +40,7 @@ public class Locadora {
                     String comentarios;
 
                     System.out.println("Digite o titulo do CD: ");
-                    titulo = entrada.nextLine();
+                    titulo = entrada.next();
 
                     System.out.println("Digite o artista ou a banda do CD: ");
                     artistaOuBanda = entrada.next();
