@@ -60,10 +60,7 @@ public class CD {
 
     @Override
     public String toString() {
-        return "titulo: " + titulo + ", artistaOuBanda: " + artistaOuBanda + ", qntMusicas :" + qntMusicas + ", preco:" + preco + ", comentarios:" 
+        return "titulo: " + titulo + ", artistaOuBanda: " + artistaOuBanda + ", qntMusicas: " + qntMusicas + ", preco: " + preco + ", comentarios: " 
                 + comentarios + ';';
     }
-    
-    
-    
 }
